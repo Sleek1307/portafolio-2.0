@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Tailwind-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/index.css">
+  <!-- Swipper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Julian</title>
+</head>
+
+<body class="scrollbar">
+  <!-- Nav y Banner   -->
+  <header id="header">
+    <nav class="flex justify-center items-center shadow-md w-full py-1 fixed bg-white z-50 top-0" id="nav-bar">
+      <div class="w-9/12 flex flex-wrap lg:flex-row justify-between items-center" id="nav-content">
+        <div class="block w-6/12 lg:w-auto">
+          <a href="#" class="nav-icon nav-text text-5xl font-bold sub">
+            J.M
+          </a>
+        </div>
+
+        <div class="lg:hidden flex justify-end w-6/12">
+          <button id="menu-toggler" class="lg:hidden">
+            <img src="/assets/images/menu.png" width="30px" height="30px" alt="">
+          </button>
+        </div>
+
+        <div id="nav-items" class="nav-items w-full justify-center items-center lg:w-auto lg:flex hidden block">
+          <ol class="flex flex-col py-5 lg:py-0 lg:flex-row justify-center gap-4">
+            <li class="text-lg text-center font-medium">
+              <a href="#about-me">
+                Acerca de mi
+              </a>
+            </li>
+            <li class="text-lg text-center font-medium">
+              <a href="#my-projects">
+                Mis proyectos
+              </a>
+            </li>
+            <li class="text-lg text-center font-medium button">
+              <a href="#contact-me">
+                Contactame
+              </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </nav>
+
+    <div class="w-full mt-[60px] h-auto flex flex-wrap lg:h-[650px]">
+      <div class="w-full relative flex flex-col justify-center pt-5 px-3 items-start md:w-6/12 items-center">
+        <p class="whitespace-pre-line text-start text-5xl font-regular">Hola, mi nombre es
+          <span class="font-bold relative sub">Julian</span><span class="font-light">
+            Y soy desarrollador web
+          </span>
+        </p>
+
+        <div class="w-full md:w-8/12 flex justify-start">
+          <button class="text-lg text-center font-medium button flex justify-center items-center" id="download-button">
+            <span>
+              Hoja de vida
+            </span>
+          </button>
+        </div>
+        <div class="bg-main">
+          <div class="bg-1"></div>
+          <div class="bg-2"></div>
+          <div class="bg-3"></div>
+        </div>
+      </div>
+      <div class="w-full h-full md:w-6/12 flex justify-center items-center md:py-10">
+        <div class="img-container flex justify-center items-center banner-img-container">
+          <img src="assets/images/JULIAN.png" alt=""
+            class="banner-img w-[200px] md:w-[200px] xl:w-[330px] 2xl:w-[375px]">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Acerca de mi -->
+  <div id="about-me" class="w-full h-auto flex justify-center about-me mt-10">
+    <div class="w-full lg:w-11/12 flex flex-wrap justify-center items-center z-20">
+
+      <div class="w-full h-[600px] sm:w-6/12 lg:w-4/12 p-8 flex flex-col justify-center items-start gap-3">
+        <p class="font-bold relative text-lg text-left sub-sm">Mi educacion</p>
+        <div class="bg-white w-full h-full rounded-3xl shadow-xl p-4 overflow-auto scrollbar">
+          <ul>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/bookmark.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <p class="text-lg font-semibold">Servicio Nacional de Aprendizaje</p>
+                  <span class="font-medium">Tecnologo en analisis y desarrollo de sistemas de la informacion</span>
+                  <p class="text-sm font-bold italic">Agosto de 2020 - Agosto de 2022</p>
+                  <p class="text-sm">Analisis y desarrollo de sistemas de la informacion es un tecnologo en el que se
+                    enseña a llevar todo el proceso del ciclo de vida,
+                    desde la planificacion y levantamiento de requerimientos, pasando por la estructuracion y creacion
+                    del proyecto, hasta llegar a la implantacion y manutencion
+                    del sistema. Todo esto aprendiendo siempre las mejores practicas y las herramientas necesarias para
+                    el proceso como lo son el manejo de bases de datos, diversos
+                    lenguajes de programacion y herramientas de modelado.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/bookmark.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <p class="text-lg font-semibold">Universidad del Norte</p>
+                  <span class="font-medium">Diplomado en desarrollo de aplicaciones web</span>
+                  <p class="text-sm font-medium italic">2021 - 2021</p>
+                  <p class="text-sm">Diplomado enfocado en el proceso de construccion de aplicaciones web SPA, donde
+                    aprendí todo lo que implica una aplicacion SPA así como una API,
+                    tambien aprendí la manera en como se estructuran este tipo proyectos, como se comunican entre si y
+                    como desplegarlos, usando tecnologías como lo son NodeJs, ReactJs, Bootsrap y MongoDB
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/bookmark.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <p class="text-lg font-semibold">Universidad del Norte</p>
+                  <span class="font-medium">Diplomado en programacion basica</span>
+                  <p class="text-sm font-medium italic">2014-2023</p>
+                  <p class="text-sm">Aprendí los fundamentos del desarrollo web mediante HTML, CSS y JavaScript asi como
+                    la manera en que un proyecto de programacion se estructura a nivel de trabajo en equipo</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="w-full h-[600px] sm:w-6/12 lg:w-4/12 p-8 flex flex-col justify-center items-start gap-3">
+        <p class="font-bold relative text-lg text-left sub-sm">Mis Habilidades</p>
+        <div class="bg-white w-full h-full rounded-3xl shadow-xl p-4 overflow-auto scrollbar">
+          <ul>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/user.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <span class="font-medium">Responsive design</span>
+                  <p class="text-sm">Diseño y construyo aplicaciones web pensando en todos los dispositivos que puedan
+                    acceder a dicha aplicacion, priorizando la experiencia de usuario antes que nada</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/user.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <span class="font-medium">Backend development</span>
+                  <p class="text-sm">Poseo la capacidad de desarrollar aplicaciones backend eficientes en diversas
+                    pataformas y con los requerimientos solicitados, siguiendo siempre las buenas practicas de seguridad
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/user.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <span class="font-medium">Diseño UI</span>
+                  <p class="text-sm">Poseo capacidades de diseño usando la herramienta figma y tambien soy capas de
+                    convertir diseños en prototipos de interfaces funcionales usando HTML, CSS</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/user.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <span class="font-medium">Ingles</span>
+                  <p class="text-sm">Habilidades tanto de writing como de reading en ingles, las cuales me permiten
+                    tanto comprender como escribir documentacion en ingles</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/user.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <span class="font-medium">Manejo de bases de datos</span>
+                  <p class="text-sm">Poseo conocimientos para construir una base de datos en diversos motores, usando
+                    tanto ORM's como comandos ya sean de SQL o de MongoDB</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="w-full h-[600px] sm:w-6/12 lg:w-4/12 p-8 flex flex-col justify-center items-start gap-3">
+        <p class="font-bold relative text-lg text-left sub-sm">Mis Tecnologías</p>
+        <div class="bg-white w-full h-full rounded-3xl shadow-xl p-4 overflow-auto scrollbar">
+          <ul>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center text-3xl">
+                  <img src="assets/images/icons/terminal.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <span class="font-medium">HTML</span>
+                  <p class="text-sm">El lenguaje de marcado de hipertexto es aquella herramienta que se usa para
+                    estructurar una pagina web, la pagina fuera una casa esta serían sus columnas y cimientos </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/terminal.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <span class="font-medium">CSS</span>
+                  <p class="text-sm">Es el lenguaje que se usa para dar estilo a los elementos de la pagina, siguiendo
+                    con el ejemplo de la casa este seria la pintura y los acabados de la fachada </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/terminal.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <span class="font-medium">JavaScript</span>
+                  <p class="text-sm">Es el lenguaje que usan los navegadores para darle funcionalidad a las paginas,
+                    este permite interacuar con los diversos elementos de la pagina
+                    y darles funcionalidad, volviendo al ejemplo de la casa este seria quien se encarga de los servicios
+                    como electricidad, agua y gas.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/terminal.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <span class="font-medium">Bootstrap</span>
+                  <p class="text-sm">Es una libreria de CSS que ya trae unos estilos pre definidos y que nos permite dar
+                    estilo a la pagina de una manera mas sencilla, mediante una serie de clases pre definidas
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/terminal.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <span class="font-medium">ReactJs</span>
+                  <p class="text-sm">Libreria de JavaScript que nos permite modificar la pagina de una manera mucho mas
+                    sencilla, combinando HTML con JavaScript, permitiendo asi que la pagina sea mucho mas dinamica
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/terminal.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <span class="font-medium">Express</span>
+                  <p class="text-sm">Libreria de JavaScript que corre en el servidor y que sirve para construir backends
+                    usando el mismo lenguaje que se usa en el navegador
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="mt-2 me-2 flex flex-col items-center">
+                  <img src="assets/images/icons/terminal.svg" class="icon-list">
+                  <div class="icon-decorator">
+                  </div>
+                </div>
+                <div>
+                  <span class="font-medium">Laravel</span>
+                  <p class="text-sm">Libreria de PHP construida con la misma intencion de Express
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mis proyectos -->
+  <div id="my-projects" class="w-full flex justify-center items-center">
+    <div class="w-11/12 flex justify-center items-center">
+      <div class="hidden lg:block w-6/12 h-[550px] p-5 project-description">
+      </div>
+      <div class="w-full h-[550px] relative px-4 py-5 swiper md:p-3 lg:w-6/12 lg:p-5">
+        <div
+          class="absolute bg-gradient shadow-md rounded-xl lg:w-8/12 w-full h-5/6 left-2/4 bottom-0 mb-4 translate-x-[-48%]">
+        </div>
+        <div class="swiper-wrapper">
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <button class="text-3xl swiper-button-prev"></button>
+        <button class="text-3xl swiper-button-next"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contacto -->
+  <div id="contact-me" class="w-full">
+    <div class="w-full h-[700px] flex justify-center">
+      <div class="hidden w-6/12 h-full contact-label flex justify-center items-center lg:flex">
+        <div class="w-10/12">
+          <span class="text-start text-4xl font-semibold relative sub-xl">Formulario de contacto</span>
+          <p class="whitespace-pre-line text-xl">
+            Si quieres contactarte conmigo
+            deja tus datos en el formulario
+            de contacto y estaré respondiendote
+            en breve.
+          </p>
+          <button id="contact-toggler" class="text-lg text-center font-medium button flex justify-center items-center">
+            <span>
+              Ver formulario
+            </span>
+            <img src="assets/images/icons/chevron-right.svg" alt="">
+          </button>
+        </div>
+      </div>
+      <div class="w-full h-full flex justify-center items-center relative lg:w-6/12">
+        <img src="assets/images/icons/girl.svg" alt="" class="hidden lg:block">
+        <div id="contact-form-container" class="h-full p-5 bg-white items-center justify-center contact_form lg:p-0">
+          <form action="" method="POST" id="contact_form">
+            <div class="flex flex-col justify-center items-start">
+              <span class="text-start text-4xl font-semibold relative sub-xl mb-6 z-50">Hazme saber tu mensaje</span>
+              <div class="flex flex-col w-full">
+                <label for="name">Nombre:</label>
+                <input class="border rounded-lg p-1 w-full focus:outline-none focus:ring-2 focus:ring-cyan-200"
+                  id="name" name="name" type="text">
+              </div>
+              <div class="flex flex-col w-full">
+                <label for="email">Correo electronico:</label>
+                <input class="border rounded-lg p-1 w-full focus:outline-none focus:ring-2 focus:ring-cyan-200"
+                  id="email" name="email" type="email">
+              </div>
+              <div class="flex flex-col w-full">
+                <label for="phone">Telefono:</label>
+                <input class="border rounded-lg p-1 w-full focus:outline-none focus:ring-2 focus:ring-cyan-200"
+                  id="phone" name="phone" type="text">
+              </div>
+              <div class="flex flex-col w-full">
+                <label for="message">Mensaje:</label>
+                <textarea name="message"
+                  class="border rounded-lg px-2 h-[120px] focus:outline-none focus:ring-2 focus:ring-cyan-200"
+                  id="message"></textarea>
+              </div>
+
+              <button type="submit"
+                class="text-lg text-center font-medium button flex justify-center items-center mt-4">Enviar
+                mensaje</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Codigo Js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+
+</html>
