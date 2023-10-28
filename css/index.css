@@ -205,10 +205,8 @@ body {
 }
 
 .contact-form__show {
-    width: 100% !important;
-    top: 0% !important;
-    left: 0% !important;
-    display: flex !important;
+    transform: translateX(0%)!important;
+    visibility: visible !important;
 }
 
 /* Modificadores */
@@ -317,10 +315,10 @@ body {
     .contact_form {
         transition: all 400ms ease-out;
         position: absolute;
-        width: 0%;
-        top: 0%;
-        left: 100%;
-        display: none;
+        width: 675px;
+        display: flex;
+        transform: translateX(100%);
+        visibility: hidden;
     }
 }
 
