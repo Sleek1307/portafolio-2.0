@@ -327,6 +327,10 @@ body {
         transform: translateX(100%);
         visibility: hidden;
     }
+
+    .nav-items {
+        height: auto;
+    }
 }
 
 /* to a medium screen */
