@@ -140,7 +140,7 @@ project.tags.forEach((item) => {
 });
 
 menuToggler.addEventListener("click", () => {
-  navItems.classList.toggle("hidden");
+  navItems.classList.toggle("nav-items__show");
 });
 
 contactToggler.addEventListener("click", () => {

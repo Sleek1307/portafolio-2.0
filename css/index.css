@@ -63,7 +63,13 @@ body {
 }
 
 .nav-items {
-    transition: all .7s;
+    transition: ease .7s;
+    height: 0px;
+}
+
+.nav-items__show {
+    height: 160px;
+    visibility: visible;
 }
 
 .banner-img-container {
@@ -270,6 +276,7 @@ body {
 
 /* to a large screen */
 @media(min-width:1024px) {
+
     .bg-main {
         display: block;
         width: 300px;
